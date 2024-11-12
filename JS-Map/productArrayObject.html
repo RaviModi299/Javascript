@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let product = [
+            {name: "Pen", price: 50},
+            {name: "Pencil", price: 20},
+            {name: "cello", price: 60}
+        ]
+
+        let productDetails = product.map(function(details) {
+            return `${details.name} comes in ${details.price}Rs`
+        })
+
+        console.log(productDetails)
+    </script>
+</body>
+</html>

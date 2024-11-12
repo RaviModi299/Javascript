@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello, Ravi</h1>
+    <h2 id="counter">Counter Value: 0</h2>
+    <button onclick="addValue()">Add Value</button>
+    <button onclick="removeValue()">Remove Value</button>
+
+    <script>
+        let countervalue = 0
+        
+        function addValue() {
+            if (countervalue < 20) {
+                countervalue = countervalue + 1
+                updateCounter()
+            }
+        }
+        function removeValue() {
+            if (countervalue > 0) {
+                countervalue = countervalue - 1
+                updateCounter()
+            }
+        }
+
+        function updateCounter() {
+            let counter = document.getElementById("counter")
+            counter.textContent = `Counter Value: ${countervalue}`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function buymilk(price,quantity,money) {
+            var bill = price * quantity
+            var change = money - bill
+            return change
+        }
+
+        var change1 = buymilk(40,2,200)
+        document.write("change rupees is: " +change1)
+    </script>
+</body>
+</html>

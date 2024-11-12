@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 300px;
+            width: 300px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="box"></p>
+    <h1 class="xpos">x: 0</h1>
+    <h1 class="ypos">y: 0</h1>
+
+    <script>
+        let box = document.querySelector(".box")
+
+        let xpos = document.querySelector(".xpos")
+        let ypos = document.querySelector(".ypos")
+
+        box.addEventListener("mousemove", function(e) {
+            console.log(e)
+
+            xpos.textContent = "X: " +e.offsetX
+            ypos.textContent = "Y: " +e.offsetY
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="welcome.html" onsubmit="return login()">
+            <input id="email" type="text" placeholder="Email" />
+            <br />
+            <input id="pwd" type="password" placeholder="password" />
+            <br />
+            <button type="submit">Login</button>
+        </form>
+        <script>
+            function login() {
+                let email = document.querySelector("#email");
+                let pwd = document.querySelector("#pwd");
+
+                if (email.value.trim() == "" || pwd.value.trim() == "") {
+                    // trim remove for remove space
+                    alert("All fields are required");
+                    return false;
+                } else if (
+                    !email.value.includes("@") ||
+                    !email.value.includes(".")
+                ) {
+                    alert("Please enter valid email id");
+                    return false;
+                } else if (pwd.value.length < 6) {
+                    alert("password must be 6 character");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </body>
+</html>

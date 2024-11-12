@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let books = [
+            {name: "C Language", author: "Sumit"},
+            {name: "C++ Language", author: "Ravi"},
+            {name: "Javascript Language", author: "Sachin"},
+        ]
+
+        let bookDetails = books.map(function(info) {
+            return `${info.name} by ${info.author}`
+        })
+
+        console.log(bookDetails)
+    </script>
+</body>
+</html>

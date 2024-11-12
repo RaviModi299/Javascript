@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var triangle = {
+            sidea : 3,
+            sideb : 4,
+            sidec : 5,
+            getarea : function() {
+                var semiperimeter = (this.sidea + this.sideb + this.sidec) / 2
+                document.write("Semiperimeter is: " +semiperimeter)
+
+                var calculation = semiperimeter * (semiperimeter - this.sidea) * (semiperimeter - this.sideb) * (semiperimeter - this.sidec)
+                document.write("<br>calculation is: " +Math.sqrt(calculation))
+            }
+        }
+        triangle.getarea()
+
+        // another way 
+        // var triangle = {
+        //     a : 3, 
+        //     b : 4,
+        //     c : 5,
+        //     getsemiperimter : function() {
+        //         var semiperimeter = (this.a + this.b + this.c) / 2
+        //         document.write("semiperimeter is: " +semiperimeter)
+        //         return semiperimeter
+        //     },
+
+        //     getarea : function() {
+        //         var semiperimeter = this.getsemiperimter()
+        //         var area = Math.sqrt(semiperimeter * (semiperimeter - this.a) * (semiperimeter - this.b) * (semiperimeter - this.c))
+        //         document.write("<br>Area is: " +area)
+        //         return area
+        //     }
+        // }
+
+        // triangle.getarea()
+    </script>
+</body>
+</html>

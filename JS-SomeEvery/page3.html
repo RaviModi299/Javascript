@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p>
+            if all value is matched then every() function is return true
+            otherwise it will return false
+        </p>
+        <script>
+            let persons = [
+                { name: "Ravi", age: 32 },
+                { name: "Abhay", age: 26 },
+                { name: "Ronak", age: 31 },
+            ];
+
+            let cb = function (per) {
+                return per.age == 32;
+            };
+
+            let r = persons.every(cb);
+            console.log(r);
+        </script>
+    </body>
+</html>

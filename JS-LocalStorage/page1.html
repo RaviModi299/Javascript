@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Used to store data permanently - browser storage
+
+        localStorage.setItem("name", "Ravi")
+        localStorage.setItem("age", 30)
+
+        // fetch
+        let name = localStorage.getItem("name")
+        let age = localStorage.getItem("age")
+
+        console.log(name, age)
+
+        // update
+        localStorage.setItem("name", "Ronak")
+
+        localStorage.removeItem("age")
+        // localStorage.clear()
+
+        console.log(localStorage.length)
+    </script>
+</body>
+</html>

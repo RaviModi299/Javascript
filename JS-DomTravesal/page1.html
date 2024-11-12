@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        <h1>Hello Ravi</h1>
+        <h2 id="firsth2">Hello world</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <script>
+        var text = document.getElementById("firsth2")
+
+        console.log(text.nextElementSibling)
+        console.log(text.previousElementSibling)
+        console.log(text.parentElement)
+        console.log(text.parentElement.parentElement)
+    </script>
+</body>
+</html>

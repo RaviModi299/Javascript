@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var car = {
+            brand : "Suzuki",
+            model : "Maruti Desire ZXI",
+            year : 2020,
+            mileage : 15000,
+            getcardetails : function() {
+                var details = this.year + " " +this.brand + " " + this.model
+                document.write("Car Details: " +details)
+                return details
+            },
+            addmileage : function(mile) {
+                this.mileage = this.mileage + mile
+                document.write("<br>Updated Mileage is: " +this.mileage)
+                return this.mileage
+            }
+        }
+
+        car.getcardetails()
+        car.addmileage(500)
+    </script>
+</body>
+</html>

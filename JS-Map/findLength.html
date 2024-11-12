@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = [
+            {fname: "Ravi", lname: "Modi"},
+            {fname: "Aayushi", lname: "Patel"},
+            {fname: "Abhay", lname: "Kadiya"}
+        ]
+
+        let findLength = name.map(function(element) {
+            return `length of Fristname is: ${element.fname.length}`
+        })
+
+        console.log(findLength)
+    </script>
+</body>
+</html>

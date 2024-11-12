@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+
+    <script>
+        let demo
+        function show() {
+            alert("Hello Ravi")
+        }
+
+        function start() {
+            demo = setInterval(show, 3000)
+        }
+        function stop() {
+            clearInterval(demo)
+        }
+    </script>
+</body>
+</html>

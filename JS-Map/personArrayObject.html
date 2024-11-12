@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let persons = [
+            {fname: "Ravi", lname: "Modi"},
+            {fname: "Ajay", lname: "Patel"},
+            {fname: "Ranu", lname: "Modi"},
+            {fname: "Abhay", lname: "Kadiya"},
+            {fname: "Ronak", lname: "Modi"},
+        ]
+
+        let fullname = persons.map(function(person) {
+            return `Firstname: ${person.fname} and Lastname: ${person.lname}`
+        })
+
+        console.log(fullname)
+    </script>
+</body>
+</html>

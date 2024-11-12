@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let products = [
+                { id: 1, name: "pen", price: 30 },
+                { id: 2, name: "pencil", price: 10 },
+            ];
+            console.log(products);
+            // let prodstr = JSON.stringify(products); // convert array obj to string
+
+            localStorage.setItem("products", JSON.stringify(products)); // convert array obj to string
+            let items = localStorage.getItem("products");
+            console.log(items); // now it's in string
+
+            let results = JSON.parse(items); // convert string to array
+            console.log(results);
+        </script>
+    </body>
+</html>

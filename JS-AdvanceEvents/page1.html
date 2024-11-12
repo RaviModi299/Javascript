@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">single click</button>
+    <button id="btn2">double click</button>
+
+    <script>
+        let r1 = document.querySelector("#btn1")
+        r1.addEventListener("click", function() {
+            alert("single click")
+        })
+
+        let r2 = document.querySelector("#btn2")
+        r2.addEventListener("dblclick", () => {
+            alert("double click")
+        })
+    </script>
+</body>
+</html>

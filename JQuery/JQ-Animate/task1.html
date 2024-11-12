@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #elephant {
+            height: 500px;
+            width: 500px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <img id="elephant" src="https://media.istockphoto.com/id/588614058/photo/elephants-in-the-forest.jpg?s=1024x1024&w=is&k=20&c=T2Py0XoQTHMlGnhgWaB5hrXd5Dye1tXGXj6IMISq8w8=" alt="test">
+    <br>
+    <button id="btn1">Start</button>
+    <button id="btn2">Stop</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $("#btn1").click(function() {
+            $("#elephant").animate({borderRadius: 500}, 2000)
+        })
+        $("#btn2").click(function() {
+            $("#elephant").stop()
+        })
+    </script>
+</body>
+</html>

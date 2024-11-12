@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var rect1 = {
+            l : 5,
+            w : 4, 
+            a : 0,
+            p : 0,
+            area : function() {
+                this.a = this.l * this.w
+                document.write("<br>Area: " +this.a)
+            },
+            perimeter : function() {
+                this.p = 2 * (this.l + this.w)
+                document.write("<br>Perimeter: " +this.p)
+            }
+        }
+
+        rect1.area()
+        rect1.perimeter()
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function Expression and Arrow function
+        // convert distance in meters to yards, feet and inches
+        // convert rupees to dollars, euros and seconds
+
+        let yards = (m) => {
+            y = m * 1.09361
+            console.log(`Meter to Yards is: ${y}`)
+        }
+        let feet = (m) => {
+            f = m * 3.28084
+            console.log(`Meter to Feet is: ${f}`)
+        }
+        let inches = (m) => {
+            i = m * 39.3701
+            console.log(`Meter to Inches is: ${i}`)
+        }
+        yards(5)
+        feet(10)
+        inches(20)
+    </script>
+</body>
+</html>

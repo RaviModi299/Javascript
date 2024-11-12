@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            label {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="welcome.html" onsubmit="return send()">
+            <input type="email" id="email" placeholder="Enter E-mail id" />
+            <br />
+            <label id="emailerr">Invalid E-Mail id</label>
+            <br />
+            <button>Submit</button>
+        </form>
+        <script>
+            let email = document.querySelector("#email");
+            let emailerr = document.querySelector("#emailerr");
+
+            let emailregex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            // let mobileregex = /[6-9][0-9]/;
+
+            function send() {
+                if (emailregex.test(email.value)) {
+                    emailerr.style.display = "none";
+                    return true;
+                } else {
+                    emailerr.style.display = "block";
+                    emailerr.style.color = "red";
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

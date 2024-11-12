@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class circle {
+            constructor(r) {
+                this.r = r
+                this.p = 3.14
+                this.a = 0
+                this.c = 0
+                this.d = 0
+            }
+            diameter() {
+                this.d = 2 * this.r
+            }
+            area() {
+                this.a = this.p * (this.r * this.r)
+            }
+            circumference() {
+                this.c = 2 * this.p * this.r
+            }
+            showData() {
+                console.log(`Diameter: ${this.d}`)
+                console.log(`Area: ${this.a}`)
+                console.log(`Circumference: ${this.c}`)
+            }
+        }
+
+        let r1 = new circle(10)
+        r1.diameter()
+        r1.area()
+        r1.circumference()
+        r1.showData()
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            localStorage.setItem("name", "Sachin");
+            localStorage.setItem("age", "29");
+
+            localStorage.removeItem("name"); // remove particular item
+            localStorage.clear(); // remove all item
+
+            let name = localStorage.getItem("name");
+            let age = localStorage.getItem("age");
+            console.log(name, age);
+        </script>
+    </body>
+</html>

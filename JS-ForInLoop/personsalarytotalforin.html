@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let personSalary = {
+            "Rohit": 80000,
+            "Sachin": 50000,
+            "Kohli": 40000,
+            "Dhoni": 60000,
+            "Raina": 30000
+        }
+
+        let sum = 0
+
+        for(let p in personSalary) {
+            console.log(`Person name is: ${p} and there Salary is: ${personSalary[p]}`)
+            sum = sum + personSalary[p]
+        }
+        console.log(`Total Salary is: ${sum}`)
+    </script>
+</body>
+</html>

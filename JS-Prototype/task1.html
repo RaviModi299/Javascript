@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function Products(name, price, category) {
+                this.name = name;
+                this.price = price;
+                this.category = category;
+            }
+
+            Products.prototype.buyProduct = function () {
+                console.log("Buy product");
+            };
+            Products.prototype.sellProducts = function () {
+                console.log("Sell products");
+            };
+
+            const p1 = new Products("Oneplus 7", 33000, "Mobile");
+            p1.buyProduct();
+            p1.sellProducts();
+            console.log(p1);
+
+            const p2 = new Products("Vivo 7", 14000, "Mobile");
+            p2.buyProduct();
+            p2.sellProducts();
+            console.log(p2);
+        </script>
+    </body>
+</html>

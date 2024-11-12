@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function dollars(rupees) {
+            var d = rupees * 0.012
+            return d
+        }
+
+        function pounds(rupees) {
+            var p = rupees * 0.0095
+            return p
+        }
+
+        function euro(rupees) {
+            var e = rupees * 0.011
+            return e
+        }
+
+        var r1 = dollars(500)
+        var r2 = pounds(500)
+        var r3 = euro(500)
+
+        document.write("500 Rupee to dollar: " +r1)
+        document.write("<br>500 Rupees to pounds: " +r2)
+        document.write("<br>500 Rupees to euro: " +r3)
+    </script>
+</body>
+</html>

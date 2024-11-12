@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let blogs = [
+            {title: "Blog-1", desc: "Description-1"},
+            {title: "Blog-2", desc: "Description-2"},
+            {title: "Blog-3", desc: "Description-3"}
+        ]
+
+        // console.log(blogs);
+
+        let blogsstr = JSON.stringify(blogs) // convert array obj to string
+        console.log(blogsstr)
+        console.log(typeof blogsstr);
+
+        localStorage.setItem("blogs", blogsstr)
+
+        let blogarray = JSON.parse(localStorage.getItem("blogs"))
+        console.log(blogarray);
+        
+    </script>
+</body>
+</html>

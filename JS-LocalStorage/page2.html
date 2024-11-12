@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // storing data
+            localStorage.setItem("Name", "Ravi");
+            localStorage.setItem("Age", 32);
+
+            // fetching data
+            let name = localStorage.getItem("Name");
+            let age = localStorage.getItem("Age");
+            console.log(name, age);
+
+            // updating data
+            localStorage.setItem("Age", "31");
+            age = localStorage.getItem("Age");
+            console.log(age);
+        </script>
+    </body>
+</html>

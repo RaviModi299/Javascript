@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = Number(prompt("Enter X value"))
+        var y = Number(prompt("Enter Y value"))
+        var z = Number(prompt("Enter Z value"))
+
+        if (x > 0 && y > 0 && z > 0) {
+            alert("The sign is +")
+        } else if (x < 0 && y < 0 && z < 0) {
+            alert("The sign is -")
+        } else if (x > 0 && y < 0 && z < 0) {
+            alert("The sign is +")
+        } else if (x < 0 && y > 0 && z < 0) {
+            alert("The sign is +")
+        } else {
+            alert("The sign is -")
+        }
+    </script>
+</body>
+</html>

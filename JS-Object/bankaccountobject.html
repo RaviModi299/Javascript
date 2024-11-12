@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let bankAccount = {
+            accountNumber : 123978123,
+            accountHolder : "Ravi Modi",
+            balance : 1000,
+            deposit : function(amount) {
+                this.balance = this.balance + amount
+                document.write("Deposited amount is " +amount + ", New balance is " +this.balance +"<br>")
+                return this.balance
+            },
+            withdraw : function(amount) {
+                if (amount > this.balance) {
+                    document.write("Insufficiet balance <br>")
+                } else {
+                    this.balance = this.balance - amount
+                    document.write("Withdraw amount is " +amount + ", New balance is " +this.balance + "<br>")
+                }
+                return this.balance
+            },
+            getAccountDetails : function() {
+                var details = "Account Number: " +this.accountNumber + ", Account Holder is: " +this.accountHolder + ", Balance is: " +this.balance
+                document.write("Account details: " +details + "<br>")
+                return details
+            }
+        }
+
+        bankAccount.deposit(500)
+        bankAccount.withdraw(1800)
+        bankAccount.getAccountDetails()
+    </script>
+</body>
+</html>

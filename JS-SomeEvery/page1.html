@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p>
+            if any one value is matched then some() function is return true
+            otherwise it will return false
+        </p>
+        <script>
+            let nums = [1, 2, 3, 4, 5, 2, 3, 5];
+
+            let cb = function (n) {
+                return n == 1;
+            };
+
+            let r = nums.some(cb);
+            console.log(r);
+        </script>
+    </body>
+</html>

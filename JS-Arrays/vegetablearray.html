@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var vegetables = ["cabbage", "onion", "carrot", "corn", "garlic"]
+
+        document.write("**** All Vegetables Name****")
+        document.write("<br>Result1: " +vegetables[0])
+        document.write("<br>Result2: " +vegetables[1])
+        document.write("<br>Result3: " +vegetables[2])
+        document.write("<br>Result4: " +vegetables[3])
+        document.write("<br>Result5: " +vegetables[4])
+        document.write(`<br>All Vegetables Name: ${vegetables[0]} ${vegetables[1]} ${vegetables[2]} ${vegetables[3]} ${vegetables[4]}`)
+
+        document.write("<br><br>****Change Garlic to Tomato****")
+        vegetables[4] = "Tomato"
+        document.write("<br> Result5: " +vegetables[4])
+
+        vegetables[5] = "Lemon"
+        document.write(`<br>All Vegetables Name: ${vegetables[0]} ${vegetables[1]} ${vegetables[2]} ${vegetables[3]} ${vegetables[4]} ${vegetables[5]}`)
+        document.write("<br><br> All veg. names: " +vegetables)
+    </script>
+</body>
+</html>

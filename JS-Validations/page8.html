@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            label {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="welcome.html" onsubmit="return send()">
+            <input
+                type="number"
+                name=""
+                id="mobile"
+                placeholder="Enter mobile number"
+            />
+            <br />
+            <label id="mobileerr">Invalid Mobile Number</label>
+            <br />
+            <button>Submit</button>
+        </form>
+        <script>
+            let mobile = document.querySelector("#mobile");
+            let mobileerr = document.querySelector("#mobileerr");
+
+            let mobileregex = /^[6-9]\d{9}$/;
+            // let mobileregex = /[6-9][0-9]/;
+
+            function send() {
+                if (mobileregex.test(mobile.value)) {
+                    mobileerr.style.display = "none";
+                    return true;
+                } else {
+                    mobileerr.style.display = "block";
+                    mobileerr.style.color = "red";
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

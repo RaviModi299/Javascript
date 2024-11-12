@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="welcome.html" onsubmit="return send()">
+            <div class="form-group">
+                <input type="text" id="fname" placeholder="First name" />
+                <p class="fnameerr"></p>
+            </div>
+            <div class="form-group">
+                <input type="text" id="lname" placeholder="Last name" />
+                <p class="lnameerr"></p>
+            </div>
+            <div class="form-group"></div>
+                <textarea style="height: 150px" name="text" placeholder="Bio" id="biodata"></textarea>
+                <p class="biodataerr"></p>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+
+        <script>
+            function send() {
+                let fname = document.querySelector("#fname");
+                let fnameerr = document.querySelector(".fnameerr");
+    
+                if (fname.value.length < 4 || fname.value.length > 12) {
+                    fnameerr.textContent = "Please add Firstname between 4 to 12 character";
+                    fnameerr.style.color = "red";
+                    return false;
+                }
+    
+                let lname = document.querySelector("#lname");
+                let lnameerr = document.querySelector(".lnameerr");
+    
+                if (lname.value.length < 4 || lname.value.length > 12) {
+                    lnameerr.textContent = "Please add Lastname between 4 to 12 character";
+                    lnameerr.style.color = "red";
+                    return false;
+                }
+                
+                let biodata = document.querySelector("#biodata");
+                let biodataerr = document.querySelector(".biodataerr");
+    
+                if (biodata.value.length < 20) {
+                    biodataerr.textContent = "Please add minimum 20 character";
+                    biodataerr.style.color = "red";
+                    return false;
+                }
+    
+                return true;
+            }
+        </script>
+    </body>
+</html>

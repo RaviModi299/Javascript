@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function User(email, pwd) {
+                this.email = email;
+                this.pwd = pwd;
+            }
+
+            User.prototype.login = function () {
+                console.log("Login works");
+            };
+
+            User.prototype.logout = function () {
+                console.log("Logout works");
+            };
+
+            function Admin(email, pwd, isAdmin) {
+                User.call(this, email, pwd);
+                this.isAdmin = isAdmin;
+            }
+
+            Admin.prototype = Object.create(User.prototype);
+            Admin.prototype.createUser = function () {
+                console.log("User create works");
+            };
+
+            let a1 = new Admin("modiravi51@gmail.com", "ravi1234", "false");
+            console.log(a1);
+        </script>
+    </body>
+</html>

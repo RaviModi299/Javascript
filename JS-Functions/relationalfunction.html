@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greaterFunction(a,b) {
+            var r = a > b
+            return r
+        }
+
+        function lessFunction(a,b) {
+            var r = a < b
+            return r
+        }
+
+        function greaterEqual(a,b) {
+            var r = a >= b
+            return r
+        }
+
+        function lessEqual(a,b) {
+            var r = a <= b
+            return r
+        }
+
+        function equalto(a,b) {
+            var r = a == b
+            return r
+        }
+
+        function notEqual(a,b) {
+            var r = a != b
+            return r
+        }
+
+        var r1 = greaterFunction(25, 10)
+        var r2 = lessFunction(10, 5)
+        var r3 = greaterEqual(10, 20)
+        var r4 = lessEqual(20, 25)
+        var r5 = equalto(25, 25)
+        var r6 = notEqual(10, 5)
+
+        document.write("<br>Greater then: " +r1)
+        document.write("<br>Less then: " +r2)
+        document.write("<br>Greater then equal to: " +r3)
+        document.write("<br>Less then equal to: " +r4)
+        document.write("<br>Equal to: " +r5)
+        document.write("<br>Not Equal to: " +r6)
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class point {
+            constructor(x,y) {
+                this.x = x
+                this.y = y
+            }
+            showData() {
+                console.log("Point Details:")
+                console.log(`X: ${this.x}`)
+                console.log(`Y: ${this.y}`)
+            }
+        }
+
+        let p1 = new point(3,4)
+        p1.showData()
+
+        let p2 = new point(10,24)
+        p2.showData()
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let employee = [
+        {id:1, name: "Ravi", position: "Ceo", salary: "60000"},
+        {id:2, name: "Sachin", position: "Manager", salary: "20000"},
+        {id:3, name: "Abhay", position: "Ceo", salary: "52000"},
+        {id:4, name: "Sumona", position: "Manager", salary: "9000"},
+        {id:5, name: "Tanaz", position: "Manager", salary: "25000"},
+    ]
+
+    let r1 = employee.filter((emp) => {
+        return emp.position == "Ceo"
+    })
+
+    let r2 = employee.filter((emp) => {
+        return emp.salary > 10000
+    })
+
+    let r3 = employee.filter((emp) => {
+        return emp.id > 3
+    })
+
+    console.log(r1)
+    console.log(r2)
+    console.log(r3)
+    </script>
+    
+</body>
+</html>

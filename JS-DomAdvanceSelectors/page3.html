@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="firsth1">Hello World</h1>
+
+    <h2 class="redh2">Hello World</h2>
+    <h2 class="redh2">Hello World</h2>
+    <h2 class="redh2">Hello World</h2>
+
+    <h3>Hello World</h3>
+    <h3>Hello World</h3>
+    <h3>Hello World</h3>
+
+    <script>
+        let firsth1 = document.querySelectorAll("#firsth1")
+        console.log(firsth1)
+
+        let redh2 = document.querySelectorAll(".redh2")
+        console.log(redh2)
+
+        redh2.forEach(function(elmt) {
+            elmt.textContent = "Hello Ravi"
+        })
+
+        let h3 = document.querySelectorAll("h3")
+        console.log(h3)
+
+        h3.forEach((elmt) => {
+            elmt.textContent = "Hello H3"
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li id="item1">coffee (first child)</li>
+        <li id="item2">tea (second child)</li>
+        <li id="item3">milk (third child)</li>
+    </ul>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+        let test = document.getElementById("item1").nextElementSibling.innerHTML
+        document.getElementById("demo").innerHTML = test
+        
+        let test2 = document.getElementById("item2").previousElementSibling.innerHTML
+        document.getElementById("demo2").innerHTML = test2
+
+        let test3 = document.getElementById("item3").parentElement.innerHTML
+        document.getElementById("demo3").innerHTML = test3
+    </script>
+</body>
+</html>

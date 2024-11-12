@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Rest Parameter
+
+        function showNames(name1, name2, name3) {
+            console.log(name1)
+            console.log(name2)
+            console.log(name3)
+        }
+
+        showNames("Ravi", "Sanket", "Mubin", "Ronak", "Abhay")
+        // we have added 3 parameter and that value and it's displayed, 
+        // but if add more parameter value then it's not display(like - "Ronak" and "Abhay" is not displayed)
+        // so for that display other parameter value we use "Rest Parameter"
+        // Rest Parameter is display all paraeter values in "Array" format.
+
+        // Solution
+
+        function displayNames(...Names) {
+            console.log(Names)
+        }
+
+        displayNames("Sachin", "Abhishek", "Rajwi", "Tanaz", "Rahul")
+    </script>
+</body>
+</html>

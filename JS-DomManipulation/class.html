@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="myh1">Name: Ravi</h1>
+    <h1 class="myh1">City: Anand</h1>
+    <h1 class="myh1">Country: India</h1>
+
+    <script>
+        var h1array = document.getElementsByClassName("myh1")
+        console.log(h1array)
+
+        h1array[0].textContent = "Name: Ronak"
+        h1array[1].textContent = "City: Paris"
+        h1array[2].textContent = "Country: France"
+    </script>
+</body>
+</html>

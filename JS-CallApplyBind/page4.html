@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function greet(age, sal) {
+                console.log(`Name: ${this.name}`);
+                console.log(`City: ${this.city}`);
+                console.log(`Age: ${age}`);
+                console.log(`Salary: ${sal}`);
+            }
+
+            let person1 = {
+                name: "Ravi",
+                city: "Mehsana",
+            };
+
+            let person2 = {
+                name: "Abhay",
+                city: "Ahmedabad",
+            };
+
+            greet.call(person1, 32, 84000);
+            greet.apply(person2, [26, 60000]);
+        </script>
+    </body>
+</html>

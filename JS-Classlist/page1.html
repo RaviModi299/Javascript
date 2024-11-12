@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .redtext {
+            color: red;
+        }
+        .bluebg {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="nameh1" class="redtext">Hello, Good Evening</h1>
+    
+    <script>
+        var heading = document.getElementById("nameh1")
+        console.log(heading.classList)
+
+        heading.classList.add("bluebg")
+        heading.classList.remove("redtext")
+        
+        heading.classList.toggle("bluebg")
+        heading.classList.toggle("redtext")
+    </script>
+</body>
+</html>

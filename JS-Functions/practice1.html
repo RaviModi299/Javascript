@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="msg()">Press</button>
+    <script>
+        // ************************ example 1 ****************************
+        function myfunction(g1,g2) {
+            return g1 / g2
+        }
+        var p = myfunction(20,2)
+        document.write("<br> The division is: " +p)
+
+        // ************************ example 2 ****************************
+        function calcAddition(number1, number2) {
+            return number1 + number2
+        }
+
+        var b = calcAddition(10, 20)
+        document.write("<br>The addition is: " +b)
+
+        // ************************ example 3 ****************************
+        function msg() {
+            alert("Hello, Ravi")
+        }
+
+        // ************************ example 4 ****************************
+        function getInfo() {
+            return "Hello Ravi, How are you?"
+        }
+        document.write("<br>" +getInfo())
+
+        // ************************ example 5 ****************************
+        function getCube(number) {
+            var result1 = number * number * number
+            document.write("<br><br>Result is: " +result1)
+        }
+        getCube(4)
+
+        // ************************ example 6 ****************************
+        function getName(name) {
+            return "Hello " + name
+        }
+        document.write("<br><br>" +getName("Ravi"))
+
+        // ************************ example 7 ****************************
+        function mathFunction() {
+            return Math.PI
+        }
+        document.write("<br><br>" +mathFunction())
+
+        // ************************ example 8 ****************************
+        function calcFunction(a,b) {
+            return a + b
+        }
+        var result = calcFunction(5,10)
+        document.write("<br><br>Result is: " +result)
+    </script>
+</body>
+</html>

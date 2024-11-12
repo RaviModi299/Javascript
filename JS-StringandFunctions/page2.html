@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var name = "Jayesh Patel";
+
+            var r1 = name.lastIndexOf("t");
+            console.log(r1);
+
+            var r2 = name.slice(0, 3);
+            console.log(r2);
+
+            var r3 = name.substr(1, 3);
+            console.log(r3);
+
+            var r4 = name.replace("Jayesh", "Ravi").replace("Patel", "Modi");
+            console.log(r4); // Output: "RaviModi Patel"
+
+            var r5 = name.split(" ");
+            console.log(r5);
+        </script>
+    </body>
+</html>

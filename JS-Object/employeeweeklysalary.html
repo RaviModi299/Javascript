@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var employee = {
+            firstname : "Ravi",
+            lastname : "Modi",
+            houlywage : 20,
+            hoursworked : 50,
+            getfullname : function() {
+                var fullname = this.firstname + " " + this.lastname
+                document.write("Fullname is: " +fullname)
+                return fullname
+            },
+            getsalary : function() {
+                var salary = this.houlywage * this.hoursworked
+                document.write("<br>Salary is: " +salary)
+                return salary
+            }
+        }
+
+        employee.getfullname()
+        employee.getsalary()
+    </script>
+</body>
+</html>

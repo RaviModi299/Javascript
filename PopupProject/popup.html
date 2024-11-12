@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <button class="openbtn" onclick="showpopup()">Show popup</button>
+    <div class="wrapper" onclick="closepopup()">
+        <div id="popup" class="popup">
+            <button class="closebtn" onclick="closepopup()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="popupcontent">
+                <h3>Check out now or receive</h3>
+                <h1>10% off</h1>
+                <h3>Your first order</h3>
+            </div>
+
+            <div class="inputgroup">
+                <input type="text" placeholder="Your email address">
+                <button class="offerbtn">Get my 10% off</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var popup = document.getElementById("popup")
+
+        function showpopup() {
+            popup.style.display = "block"
+        }
+        function closepopup() {
+            popup.style.display = "none"
+        }
+        // showpopup()
+        closepopup()
+    </script>
+</body>
+</html>

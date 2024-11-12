@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="welcome.html" onsubmit="return login()">
+            <input id="unm" type="text" placeholder="Username" />
+            <br />
+            <input id="pwd" type="password" placeholder="password" />
+            <br />
+            <button type="submit">Login</button>
+        </form>
+        <script>
+            function login() {
+                let unm = document.querySelector("#unm");
+                let pwd = document.querySelector("#pwd");
+
+                if (unm.value == "" || pwd.value == "") {
+                    alert("All fields are required");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </body>
+</html>

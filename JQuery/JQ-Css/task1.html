@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <button id="btn1" class="button">Bold</button>
+    <button id="btn2" class="button">Italic</button>
+    <button id="btn3" class="button">Underline</button>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $("#btn1").click(function() {
+            $("h1").css({fontWeight: "bold"})
+        })
+        $("#btn2").click(function() {
+            $("h1").css({fontStyle: "italic"})
+        })
+        $("#btn3").click(function() {
+            $("h1").css({textDecoration: "underline"})
+        })
+    </script>
+</body>
+</html>

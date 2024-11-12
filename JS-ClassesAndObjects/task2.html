@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class calc {
+            constructor(v1, v2) {
+                this.v1 = v1
+                this.v2 = v2
+                this.a1 = 0
+                this.s1 = 0
+                this.m1 = 0
+                this.d1 = 0
+            }
+            addition() {
+                this.a1 = this.v1 + this.v2
+            }
+            subtraction() {
+                this.s1 = this.v1 - this.v2
+            }
+            multiplication() {
+                this.m1 = this.v1 * this.v2
+            }
+            division() {
+                this.d1 = this.v1 / this.v2
+            }
+            showData() {
+                console.log(`Addition: ${this.a1}`)
+                console.log(`Subtraction: ${this.s1}`)
+                console.log(`Multiplication: ${this.m1}`)
+                console.log(`Division: ${this.d1}`)
+            }
+        }
+
+        let r1 = new calc(20, 5)
+        r1.addition()
+        r1.subtraction()
+        r1.multiplication()
+        r1.division()
+        r1.showData()
+    </script>
+</body>
+</html>

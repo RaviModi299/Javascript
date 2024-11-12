@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let todo = [
+                { id: "1", title: "Home work" },
+                { id: "2", title: "Mobile Repaire" },
+            ];
+
+            // storing data
+            localStorage.setItem("todo", JSON.stringify(todo)); // convert array obj to string
+            let todoitem = localStorage.getItem("todo");
+            console.log(todoitem);
+
+            let todoobj = JSON.parse(todoitem); // convert string to array
+            console.log(todoobj);
+        </script>
+    </body>
+</html>

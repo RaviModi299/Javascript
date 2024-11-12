@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form onsubmit="return send()">
+            <input type="text" id="did" placeholder="DEPT ID:" />
+            <br />
+            <input type="text" id="dname" placeholder="DEPT Name:" />
+            <button>Add</button>
+        </form>
+
+        <script>
+            let did = document.querySelector("#did");
+            let dname = document.querySelector("#dname");
+
+            // let dnameregex = /d00[12345]/;
+            let dnameregex = /d00[1-9]/;
+
+            function send() {
+                if (dnameregex.test(dname.value)) {
+                    alert("Dname is valid");
+                    return true;
+                } else {
+                    alert("Dname is not valid");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

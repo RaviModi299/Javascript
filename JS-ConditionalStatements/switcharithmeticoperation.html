@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = Number(prompt("Enter number a:"))
+        var b = Number(prompt("Enter number b:"))
+        var op = prompt("Enter operator")
+
+        switch(op) {
+            case "+":
+                r = a + b
+                alert("Result is: " +r)
+                break
+
+            case "-":
+                r = a - b
+                alert("Result is: " +r)
+                break
+
+            case "*":
+                r = a * b
+                alert("Result is: " +r)
+                break
+
+            case "/":
+                r = a / b
+                alert("Result is: " +r)
+                break
+
+            default:
+                alert("Invalid input")
+                break
+        }
+    </script>
+</body>
+</html>

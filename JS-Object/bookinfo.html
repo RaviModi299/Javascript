@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Object</title>
+</head>
+<body>
+    <script>
+        var book = {
+            title: "JavaScript: The Good Parts",
+            author: "Ravi Modi",
+            pages: 176,
+            currentPage: 1,
+            readPages: function(numPages) {
+                this.currentPage = this.currentPage + numPages
+                if(this.currentPage > this.pages) {
+                    this.currentPage = this.pages
+                }
+                document.write("You are on this pages: " +this.currentPage + "<br>")
+                return this.currentPage
+            },
+            bookinfo: function() {
+                var info = this.title + " by " + this.author + ", " +this.pages + " pages." 
+                document.write("Book Info: " +info + "<br>")
+            }
+        };
+
+        book.readPages(30);
+        book.bookinfo();
+        book.readPages(150);
+    </script>
+</body>
+</html>

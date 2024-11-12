@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let d1 = new Date()
+        console.log(d1.getTime())
+
+        let d2 = new Date(2024, 7, 12, 5, 30, 22)
+        console.log(d2.getTime())
+
+        let r = d1 - d2
+        console.log(r)
+
+        let s = Math.round(r / 1000)
+        console.log(`Seconds: ${s}`)
+
+        let m = Math.round(r / 60)
+        console.log(`Minutes: ${m}`)
+
+        let h = Math.round(m / 60)
+        console.log(`Hours: ${h}`)
+
+        let d = Math.round(h / 24)
+        console.log(`Day: ${d}`)
+    </script>
+</body>
+</html>

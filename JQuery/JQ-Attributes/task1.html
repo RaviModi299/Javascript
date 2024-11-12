@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Initial image with width and height attributes -->
+    <img width="500px" height="300px" src="https://images.unsplash.com/photo-1600158362217-37e9db30b17a?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="test">
+    
+    <!-- Buttons to change the image and its attributes -->
+    <button type="button" id="btn1">flower</button>
+    <button type="button" id="btn2">bird</button>
+    <button type="button" id="btn3">double</button>
+    <button type="button" id="btn4">alt</button>
+
+    <!-- Including jQuery from a CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- jQuery script to handle button clicks -->
+    <script>
+        $(document).ready(function() {
+            // Change to flower image
+            $("#btn1").click(function() {
+                $("img").attr("src", "https://images.unsplash.com/photo-1483519396903-1ef292f4974a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            });
+
+            // Change to bird image
+            $("#btn2").click(function() {
+                $("img").attr("src", "https://images.unsplash.com/photo-1480044965905-02098d419e96?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            });
+
+            // Change to double-sized image
+            $("#btn3").click(function() {
+                $("img").attr("src", "https://images.unsplash.com/photo-1518709268803-4a8f3f7fe48c?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+                $("img").attr({
+                    "width": "1000px",
+                    "height": "600px"
+                });
+            });
+
+            // Change the alt attribute of the image
+            $("#btn4").click(function() {
+                $("img").attr("alt", "A new description for the image");
+                let $alt = $("img").attr("alt")
+                console.log($alt)
+            });
+        });
+    </script>
+</body>
+</html>

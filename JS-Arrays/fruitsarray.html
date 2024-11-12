@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Array - use to store multiple value in a single variable
+        // Use index to access or update element
+        var fruits = ["Apple", "Mango", "Banana", "Orange", "Grapes"]
+
+        document.write("****All Fruits****")
+        document.write("<br>Result1: " +fruits[0])
+        document.write("<br>Result2: " +fruits[1])
+        document.write("<br>Result3: " +fruits[2])
+        document.write("<br>Result4: " +fruits[3])
+        document.write("<br>Result5: " +fruits[4])
+
+        fruits[3] = "Pineapple"       // change element value
+        fruits.push ("Watermelon")    // add new array element
+        let r1 = fruits.length        // count array length
+
+        document.write("<br><br>****Orange fruit change to pineapple****")
+        document.write("<br>Result4: " +fruits[3])
+
+        document.write("<br><br>All fruits Name: " +fruits)
+        document.write("<br><br> count length: " +r1)
+    </script>
+</body>
+</html>

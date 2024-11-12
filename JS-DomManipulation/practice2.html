@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="showNumbers()">Print 1 to 10 numbers</button>
+
+    <script>
+        function showNumbers() {
+            var numbersElement = document.getElementById("demo")
+            var numbers = "";
+            
+            for(i=1; i <=10; i++) {
+                var numbers = numbers + i +" "
+            }
+            numbersElement.textContent = numbers
+        }
+    </script>
+</body>
+</html>

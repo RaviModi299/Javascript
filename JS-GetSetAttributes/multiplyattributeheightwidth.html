@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="elephant" src="https://media.istockphoto.com/id/1128748845/photo/group-of-african-elephants-in-the-wild.jpg?s=1024x1024&w=is&k=20&c=c1kujmC-WkWw8-qA7QOC1owvvoKYchPnwCfjPJFB3R0=" alt="test" width="300" height="300" />
+
+    <script>
+        var elephant = document.getElementById("elephant")
+
+        elephant.setAttribute("width",Number(elephant.getAttribute("width")*2))
+        elephant.setAttribute("height", Number(elephant.getAttribute("height") *2))
+        elephant.setAttribute("alt", "Hello Moto")
+        elephant.setAttribute("border", "10")
+    </script>
+</body>
+</html>

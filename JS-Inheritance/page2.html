@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class square {
+            constructor (l) {
+                self.l = l
+            }
+            showLength() {
+                console.log(`Length: ${self.l}`)
+            }
+        }
+
+        class rect extends square {
+            constructor(l, w) {
+                super(l)
+                self.w = w
+            }
+            showWidth() {
+                console.log(`Width: ${self.w}`)
+            }
+        }
+
+        // let s1 = new square(10)
+        // s1.showLength()
+
+        let r1 = new rect(15,20)
+        r1.showLength()
+        r1.showWidth()
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simple DOM example</title>
+  </head>
+  <body>
+    <section>
+      <img
+        src="https://images.unsplash.com/photo-1525877442103-5ddb2089b2bb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="A red Tyrannosaurus Rex: A two legged dinosaur standing upright like a human, with small arms, and a large head with lots of sharp teeth." />
+      <p>
+        Here we will add a link to the
+        <a id="link2" href="https://www.mozilla.org/">Mozilla homepage</a>
+      </p>
+    </section>
+
+    <script>
+        let link = document.querySelector("a")
+        console.log(link)
+        link.textContent = "Mozilla Developer Network"
+        link.href = "https://developer.mozilla.org"
+    </script>
+  </body>
+</html>

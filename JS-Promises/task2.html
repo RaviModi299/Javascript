@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="id1">ID: </h1>
+    <h2 id="fname">First Name: </h2>
+    <h2 id="lname">Last Name: </h2>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+        async function req() {
+            let response = await fetch("https://reqres.in/api/users/2")
+            console.log(response)
+
+            let jsonData = await response.json()
+            console.log(jsonData.data)
+
+            let id1 = document.querySelector("#id1")
+            id1.textContent = `ID: ${jsonData.data.id}`
+
+            let fname = document.querySelector("#fname")
+            fname.textContent = `First Name: ${jsonData.data.first_name}`
+
+            let lname = document.querySelector("#lname")
+            lname.textContent = `Last Name: ${jsonData.data.last_name}`
+        }
+
+        req()
+    </script>
+</body>
+</html>

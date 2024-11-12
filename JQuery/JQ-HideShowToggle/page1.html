@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            height: 500px;
+            width: 500px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <button id="btn1">Hide</button>
+    <button id="btn2">Show</button>
+    <button id="btn3">Toggle</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $("#btn1").click(function() {
+            $(".box").hide()
+        })
+        $("#btn2").click(function() {
+            $(".box").show()
+        })
+        $("#btn3").click(function() {
+            $(".box").toggle()
+        })
+    </script>
+</body>
+</html>

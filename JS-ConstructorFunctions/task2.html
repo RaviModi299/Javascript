@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function Students(
+                rno,
+                name,
+                physics,
+                chemestry,
+                biology,
+                maths,
+                eng
+            ) {
+                this.rno = rno;
+                this.name = name;
+                this.physics = physics;
+                this.chemestry = chemestry;
+                this.biology = biology;
+                this.maths = maths;
+                this.eng = eng;
+            }
+
+            let s1 = new Students(1, "Ravi", 89, 78, 67, 74, 48);
+            console.log(
+                s1.rno,
+                s1.name,
+                s1.physics,
+                s1.chemestry,
+                s1.biology,
+                s1.maths,
+                s1.eng
+            );
+
+            let s2 = new Students(2, "Abhay", 68, 75, 55, 65, 70);
+            console.log(
+                s2.rno,
+                s2.name,
+                s2.physics,
+                s2.chemestry,
+                s2.biology,
+                s2.maths,
+                s2.eng
+            );
+        </script>
+    </body>
+</html>

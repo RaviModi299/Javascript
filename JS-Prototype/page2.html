@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function User(email, pwd) {
+                this.email = email;
+                this.pwd = pwd;
+            }
+
+            function Admin(email, pwd, isAdmin) {
+                User.call(this, email, pwd);
+                this.isAdmin = isAdmin;
+            }
+
+            let a1 = new Admin("modiravi51@gmail.com", "ravi12345", true);
+            console.log(a1);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class rect {
+            constructor(l, w) {
+                this.l = l
+                this.w = w
+                this.a = 0
+                this.p = 0
+            }
+            area() {
+                this.a = this.l * this.w
+            }
+            perimeter() {
+                this.p = this.l + this.w + this.l + this.w
+            }
+            showData() {
+                console.log(`Area: ${this.a}`)
+                console.log(`Perimeter: ${this.p}`)
+            }
+        }
+
+        let r1 = new rect(4, 2)
+        r1.area()
+        r1.perimeter()
+        r1.showData()
+    </script>
+</body>
+</html>

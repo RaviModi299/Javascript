@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="welcome.html" onsubmit="return send()">
+            <div class="form-group">
+                <label>Usename</label>
+                <input type="text" id="uname" placeholder="Username" />
+                <p id="unameerr"></p>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Email" />
+                <p id="emailerr"></p>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <script>
+            function send() {
+                let iserr = true;
+
+                let uname = document.querySelector("#uname");
+                let unameerr = document.querySelector("#unameerr");
+
+                if (uname.value.length < 3 || uname.value.length > 25) {
+                    unameerr.textContent =
+                        "Please add name between 3 to 25 character";
+                    unameerr.style.color = "red";
+                    iserr = false;
+                }
+
+                let email = document.querySelector("#email");
+                let emailerr = document.querySelector("#emailerr");
+                let emailregex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                if (!emailregex.test(email.value)) {
+                    emailerr.textContent = "Please add valid email";
+                    emailerr.style.color = "red";
+                    iserr = false;
+                }
+
+                return iserr;
+            }
+        </script>
+    </body>
+</html>

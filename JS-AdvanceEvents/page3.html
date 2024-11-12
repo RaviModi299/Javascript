@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="n1">
+    <input type="text" id="n2">
+
+    <input type="text" id="r">
+
+    <button id="add">Add</button>
+    <button id="sub">Sub</button>
+    <button id="mul">Mul</button>
+    <button id="div">Div</button>
+    
+    <script>
+        let n1 = document.querySelector("#n1")
+        let n2 = document.querySelector("#n2")
+        let r = document.querySelector("#r")
+
+        let add = document.querySelector("#add")
+        add.addEventListener("click", function() {
+            let ans = Number(n1.value) + Number(n2.value)
+            r.value = ans
+        })
+        
+        let sub = document.querySelector("#sub")
+        sub.addEventListener("click", function() {
+            let ans = Number(n1.value) - Number(n2.value)
+            r.value = ans
+        })
+
+        let mul = document.querySelector("#mul")
+        mul.addEventListener("click", function() {
+            let ans = Number(n1.value) * Number(n2.value)
+            r.value = ans
+        })
+
+        let div = document.querySelector("#div")
+        div.addEventListener("click", function() {
+            let ans = Number(n1.value) / Number(n2.value)
+            r.value = ans
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <h1>Hello</h1>
+        <h2 id="firsth2">Hello World</h2>
+        <p>first - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur cum nobis quaerat accusamus iste ex. Voluptatum repellendus alias velit vero necessitatibus, iure odit odio illo nihil? Repellendus possimus veritatis natus?</p>
+        <p>second - Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit reiciendis nulla magni aliquid nostrum! Dolorum enim eos eveniet dolore nobis asperiores aliquid eligendi perspiciatis magnam architecto, dolores maxime id ea?</p>
+        
+    </div>
+
+    <script>
+        let text = document.getElementById("firsth2")
+        console.log(text.nextElementSibling)
+        console.log(text.previousElementSibling)
+
+        console.log(text.parentElement)
+        console.log(text.parentElement.parentElement)
+    </script>
+</body>
+</html>

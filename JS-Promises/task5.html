@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="advice"></h1>
+    <button class="btn1">Get Advice</button>
+    <p>You have read <strong class="count"></strong> pieces of advice</p>
+
+    <script>
+        let count = 0
+
+        let adviceEM = document.querySelector(".advice")
+        let btnEM = document.querySelector(".btn1")
+        let countEM = document.querySelector(".count")
+
+        async function getAdvice() {
+            let res = await fetch("https://api.kanye.rest/")
+            let data = await res.json()
+
+            count = count + 1
+            adviceEM.textContent = data.quote
+            countEM.textContent = count
+        }
+
+        getAdvice()
+        btnEM.addEventListener("click", getAdvice)
+    </script>
+</body>
+</html>

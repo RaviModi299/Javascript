@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    // h1 - food name
+    // h2 - movie name
+    // p - car name
+
+    <h1 id="food1">Food: Punjabi</h1>
+    <h2 class="movie1">Movie: Commando</h2>
+    <p>Car: Maruti</p>
+
+    <script>
+        var food = document.getElementById("food1")
+        var movie = document.getElementsByClassName("movie1")
+        var car = document.getElementsByTagName("p")
+
+        console.log(food)
+        console.log(movie)
+        console.log(car)
+
+        food.textContent = "Food: Chinese"
+        movie[0].textContent = "Movie: 3-Idiot"
+        car[0].textContent = "Car: Hyundai"
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class product {
+            constructor(id, name, category, price) {
+                this.id = id
+                this.name = name
+                this.category = category
+                this.price = price
+            }
+            showData() {
+                console.log(`Product id: ${this.id}`);
+                console.log(`Product name: ${this.name}`);
+                console.log(`Product category: ${this.category}`);
+                console.log(`Product price: ${this.price}`);
+            }
+        }
+
+        let product1 = new product(1, "Product-1", "Mobile", 3200)
+        product1.showData()
+
+        let product2 = new product(2, "Product-2", "Mobile", 3400)
+        product2.showData()
+
+        let product3 = new product(3, "Product-3", "Mobile", 3800)
+        product3.showData()
+
+        let product4 = new product(4, "Product-4", "Mobile", 4000)
+        product4.showData()
+    </script>
+</body>
+</html>

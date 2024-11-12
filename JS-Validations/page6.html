@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            label {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form onsubmit="return send()">
+            <input type="text" name="" id="did" placeholder="Dept id" />
+            <br />
+            <label id="diderr">Invaild Dept. id</label>
+            <br />
+            <input type="text" name="" id="dname" placeholder="Dept name" />
+            <br />
+            <label id="dnameerr">Invaild Dept. id</label>
+            <br />
+            <button>Add</button>
+        </form>
+
+        <script>
+            let did = document.querySelector("#did");
+            let dname = document.querySelector("#dname");
+            let dnameerr = document.querySelector("#dnameerr");
+
+            let dnameregex = /d00[1-9]/;
+
+            function send() {
+                if (dnameregex.test(dname.value)) {
+                    dnameerr.style.display = "none";
+                    return true;
+                } else {
+                    dnameerr.style.display = "block";
+                    dnameerr.style.color = "red";
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

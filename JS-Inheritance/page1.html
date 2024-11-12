@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Single Inheritance
+        class User {
+            constructor(unm, pwd) {
+                this.unm = unm
+                this.pwd = pwd
+            }
+            login() {
+                console.log(`${this.unm} Login`)
+            }
+            logout() {
+                console.log(`${this.unm} Logout`)
+            }
+        }
+
+        class Admin extends User {
+            constructor(unm, pwd) {
+                super(unm, pwd)
+            }
+            insert() {
+                console.log("User inserted")
+            }
+            update() {
+                console.log("User updated")
+            }
+            delete() {
+                console.log("User deleted")
+            }
+            fetch() {
+                console.log("User fetched")
+            }
+        }
+
+        let u1 = new User("Ravi", "ravi123")
+        u1.login()
+        u1.logout()
+
+        let r1 = new Admin("Admin", "admin123")
+        r1.login()
+        r1.logout()
+        r1.insert()
+        r1.update()
+        r1.delete()
+        r1.fetch()
+    </script>
+</body>
+</html>

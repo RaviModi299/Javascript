@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function User(email, pwd) {
+                this.email = email;
+                this.pwd = pwd;
+            }
+
+            User.prototype.login = function () {
+                console.log("login works");
+            };
+
+            User.prototype.logout = function () {
+                console.log("logout works");
+            };
+
+            const u1 = new User("ravi@gmail.com", "ravi12345");
+            //console.log(u1.email, u1.pwd);
+            u1.login();
+            u1.logout();
+            console.log(u1);
+
+            const u2 = new User("abhay@gmail.com", "abhay12345");
+            // console.log(u2.email, u2.pwd);
+            u2.login();
+            u2.logout();
+            console.log(u2);
+        </script>
+    </body>
+</html>

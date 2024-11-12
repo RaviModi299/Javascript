@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Classes is like a Templates or Blueprints
+        class Box {
+            constructor(l,w,h) {  // This constructor is automatically called
+                console.log("constructor called")
+                this.l = l
+                this.w = w
+                this.h = h
+            }
+            showData() {
+                console.log("***Box Data***")
+                console.log(`Length: ${this.l}`);
+                console.log(`Width: ${this.w}`)
+                console.log(`Height: ${this.h}`)
+            }
+        }
+
+        let box1 = new Box(4,5,6)
+        box1.showData()
+
+        let box2 = new Box(7,8,9)
+        box2.showData()
+    </script>
+</body>
+</html>

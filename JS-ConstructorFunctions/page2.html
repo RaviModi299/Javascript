@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function Products(id, name, category, price) {
+                this.id = id;
+                this.name = name;
+                this.category = category;
+                this.price = price;
+            }
+
+            const p1 = new Products(1, "Pen", "Stationary", 10);
+            console.log(p1.id, p1.name, p1.category, p1.price);
+
+            const p2 = new Products(2, "Eraser", "Stationary", 5);
+            console.log(p2.id, p2.name, p2.category, p2.price);
+        </script>
+    </body>
+</html>
